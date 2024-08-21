@@ -17,13 +17,13 @@ const Stack = () => {
       id="stack"
       className="border-b dark:border-gray-900 border-gray-300 w-full flex flex-col  "
     >
-      <div className="flex  min-w-[1200px] px-[40px]  mx-auto">
+      <div className="flex  max-w-[1200px] px-[24px] md:px-[40px] w-full  mx-auto">
         <div className="justify-start flex flex-col gap-8 md:gap-14 py-16 md:py-28   ">
           <h3 className=" text-2xl md:text-4xl dark:text-white text-red-700  font-black">
             Stack
           </h3>
-          <div className="text-[14px] md:text-[16px] gap-8 md:gap-32  flex  items-start">
-            <div className="flex flex-col gap-5 md:gap-8 items-start">
+          <div className="text-[14px] md:text-[16px] gap-8 md:gap-32  flex  items-start flex-wrap">
+            <div className="flex flex-col gap-5 md:gap-8 items-start flex-1">
               <div className="flex gap-2 items-center justify-center dark:hover:text-white hover:text-red-700 cursor-pointer">
                 <FaReact className="text-[22px] md:text-[24px]" />
                 <p>React</p>
@@ -45,7 +45,7 @@ const Stack = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 md:gap-8 items-start">
+            <div className="flex flex-col gap-5 md:gap-8 items-start flex-1">
               <div className="flex gap-2 items-center justify-center dark:hover:text-white hover:text-red-700 cursor-pointer">
                 <SiVitest className="text-[22px] md:text-[24px]" />
                 <p>Vitest</p>
@@ -67,7 +67,7 @@ const Stack = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 md:gap-8 items-start">
+            <div className="flex flex-col gap-5 md:gap-8 items-start flex-1">
               <div className="flex gap-2 items-center justify-center dark:hover:text-white hover:text-red-700 cursor-pointer">
                 <SiEslint className="text-[22px] md:text-[24px]" />
                 <p>Eslint</p>

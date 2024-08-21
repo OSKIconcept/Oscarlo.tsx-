@@ -9,7 +9,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=" shadow-sm py-[20px] md:py-6 px-[40px] fixed top-0 backdrop-blur-xl w-full z-10 blur-nav bg-opacity-25 bg-clip-padding">
+    <div className=" shadow-sm py-[20px] md:py-6 px-[24px] md:px-[40px] fixed top-0 backdrop-blur-xl w-full z-10 blur-nav bg-opacity-25 bg-clip-padding">
       <div className="flex justify-between items-center  max-w-[1440px] mx-auto">
         <div className="bg-[#B31312] text-white font-black italic md:px-4 px-3 md:py-2.5 py-1.5 text-[14px] md:text-[16px]">
           Oscarlo.tsx
@@ -104,36 +104,50 @@ const Nav = () => {
             </div>
 
             <ul className="flex flex-col gap-8 items-start justify-center cursor-pointer pt-4 ">
-              <li
-                className={`${active === "L1" && "text-white"}`}
-                onClick={() => setActive("L1")}
-              >
-                About
-              </li>
-              <li
-                className={`${active === "L2" && "text-white"}`}
-                onClick={() => setActive("L2")}
-              >
-                Experience
-              </li>
-              <li
-                className={`${active === "L3" && "text-white"}`}
-                onClick={() => setActive("L3")}
-              >
-                Stack
-              </li>
-              <li
-                className={`${active === "L4" && "text-white"}`}
-                onClick={() => setActive("L4")}
-              >
-                Projects
-              </li>
-              <li
-                className={`${active === "L5" && "text-white"}`}
-                onClick={() => setActive("L5")}
-              >
-                Contact
-              </li>
+              <a href="#about">
+                <li
+                  className={`${active === "L1" && "text-white"}`}
+                  onClick={() => setActive("L1")}
+                >
+                  About
+                </li>
+              </a>
+
+              <a href="#experience">
+                <li
+                  className={`${active === "L2" && "text-white"}`}
+                  onClick={() => setActive("L2")}
+                >
+                  Experience
+                </li>
+              </a>
+
+              <a href="#stack">
+                <li
+                  className={`${active === "L3" && "text-white"}`}
+                  onClick={() => setActive("L3")}
+                >
+                  Stack
+                </li>
+              </a>
+
+              <a href="#projects">
+                <li
+                  className={`${active === "L4" && "text-white"}`}
+                  onClick={() => setActive("L4")}
+                >
+                  Projects
+                </li>
+              </a>
+
+              <a href="#contact">
+                <li
+                  className={`${active === "L5" && "text-white"}`}
+                  onClick={() => setActive("L5")}
+                >
+                  Contact
+                </li>
+              </a>
             </ul>
           </div>
         </div>

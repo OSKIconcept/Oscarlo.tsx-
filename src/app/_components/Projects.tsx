@@ -9,7 +9,7 @@ const Projects = () => {
       id="projects"
       className="border-b dark:border-gray-900 border-gray-300 w-full flex flex-col  "
     >
-      <div className="flex  max-w-[1200px] px-[40px]  mx-auto w-full ">
+      <div className="flex  max-w-[1200px] px-[24px] md:px-[40px]  mx-auto w-full ">
         <div className="justify-start flex flex-col gap-8 md:gap-14 py-16 md:py-28   ">
           <h3 className="text-2xl md:text-4xl dark:text-white text-red-700  font-black ">
             Projects

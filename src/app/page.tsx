@@ -9,7 +9,7 @@ import Contact from "./_components/Contact";
 
 export default async function Home() {
   // for loading state
-  await new Promise((resolver) => setTimeout(resolver, 3500));
+  await new Promise((resolver) => setTimeout(resolver, 5000));
 
   return (
     <div className=" dark:text-foreground text-gray-700  font-normal overflow-x-hidden  dark:bg-background    ">

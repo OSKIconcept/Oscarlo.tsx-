@@ -7,7 +7,10 @@ const About = () => {
       id="about"
       className="border-y dark:border-gray-900 border-gray-300 w-full  flex flex-col justify-center items-center   "
     >
-      <div className=" py-16 md:py-28    text-[14px] md:text-[16px] px-[40px] max-w-[1200px]  ">
+      <div
+        id="abt"
+        className=" py-16 md:py-28    text-[14px] md:text-[16px] px-[24px] md:px-[40px] max-w-[1200px] w-full  "
+      >
         <div>
           <h3 className="pb-8 md:pb-14 text-2xl md:text-4xl dark:text-white text-red-700  font-black ">
             About Me
@@ -17,10 +20,10 @@ const About = () => {
               <Image
                 src={"/osc.jpg"}
                 alt="oscar Chilaka"
-                width={380}
-                height={380}
+                width={320}
+                height={280}
                 quality={100}
-                className="cursor-pointer hover:opacity-95 max-w-[380px] max-h-[380px]  object-cover rounded-xl shadow-xl transition-colors"
+                className="cursor-pointer hover:opacity-95  max-w-[400px] max-h-[380px]  object-cover rounded-xl shadow-xl transition-colors"
               />
             </div>
 
