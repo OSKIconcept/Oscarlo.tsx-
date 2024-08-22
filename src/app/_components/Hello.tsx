@@ -47,7 +47,7 @@ const Hello = () => {
 
       <button
         onClick={handleClick}
-        className={` inline-flex gap-3 md:gap-4  cursor-pointer bg-gradient-to-br from-[#088395] to-[#088395] dark:from-[#B31312] dark:to-[#BE3144] dark:hover:bg-[#BE3144] hover:bg-[#37B7C3] hover:bg-none font-bold text-[#F3F3F3] py-2 px-5 md:py-3 md:px-6 md:text-[20px] italic  text-sm ${
+        className={` flex items-center justify-center gap-3 md:gap-4  cursor-pointer bg-gradient-to-br from-[#088395] to-[#088395] dark:from-[#B31312] dark:to-[#BE3144] dark:hover:bg-[#BE3144] hover:bg-[#37B7C3] hover:bg-none font-bold text-[#F3F3F3] py-2 px-5 md:py-3 md:px-6 md:text-[20px] italic  text-sm ${
           pop && "opacity-0"
         }`}
       >
