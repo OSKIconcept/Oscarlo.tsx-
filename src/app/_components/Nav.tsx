@@ -107,7 +107,10 @@ const Nav = () => {
               <a href="#about">
                 <li
                   className={`${active === "L1" && "text-white"}`}
-                  onClick={() => setActive("L1")}
+                  onClick={() => {
+                    setActive("L1");
+                    setIsOpen(false);
+                  }}
                 >
                   About
                 </li>
@@ -116,7 +119,10 @@ const Nav = () => {
               <a href="#experience">
                 <li
                   className={`${active === "L2" && "text-white"}`}
-                  onClick={() => setActive("L2")}
+                  onClick={() => {
+                    setActive("L2");
+                    setIsOpen(false);
+                  }}
                 >
                   Experience
                 </li>
@@ -125,7 +131,10 @@ const Nav = () => {
               <a href="#stack">
                 <li
                   className={`${active === "L3" && "text-white"}`}
-                  onClick={() => setActive("L3")}
+                  onClick={() => {
+                    setActive("L3");
+                    setIsOpen(false);
+                  }}
                 >
                   Stack
                 </li>
@@ -134,7 +143,10 @@ const Nav = () => {
               <a href="#projects">
                 <li
                   className={`${active === "L4" && "text-white"}`}
-                  onClick={() => setActive("L4")}
+                  onClick={() => {
+                    setActive("L4");
+                    setIsOpen(false);
+                  }}
                 >
                   Projects
                 </li>
@@ -143,7 +155,10 @@ const Nav = () => {
               <a href="#contact">
                 <li
                   className={`${active === "L5" && "text-white"}`}
-                  onClick={() => setActive("L5")}
+                  onClick={() => {
+                    setActive("L5");
+                    setIsOpen(false);
+                  }}
                 >
                   Contact
                 </li>

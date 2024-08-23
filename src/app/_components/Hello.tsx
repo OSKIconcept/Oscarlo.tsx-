@@ -32,7 +32,7 @@ const Hello = () => {
       className="h-screen flex flex-col gap-5 md:gap-8 items-center justify-center px-[24px] md:px-[40px] py-40 md:py-48"
     >
       <h3 className="md:text-2xl text-[16px] font-medium">Hello it&apos;s</h3>
-      <div className="md:text-7xl text-[42px] font-black text-transparent bg-clip-text bg-gradient-to-tr dark:from-gray-500 dark:to-white from-red-900 to-red-600 tracking-tighter">
+      <div className="md:text-7xl text-[38px] font-black text-transparent bg-clip-text bg-gradient-to-tr dark:from-gray-500 dark:to-white from-red-900 to-red-600 tracking-tighter">
         <ReactTyped
           strings={["Oscarlo.tsx"]}
           typeSpeed={80}
