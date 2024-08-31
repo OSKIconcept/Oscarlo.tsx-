@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
@@ -18,7 +20,13 @@ const Experience = () => {
             <p className="dark:text-white  font-bold underline">HNG</p>
             <p className=" ">July 2024 - August 2024</p>
 
-            <div className="dark:text-white font-normal pt-2 md:pt-4 flex flex-col gap-2.5 ">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "backIn" }}
+              viewport={{ margin: "-100px", once: true }}
+              className="dark:text-white font-normal pt-2 md:pt-4 flex flex-col gap-2.5 "
+            >
               <p>
                 - I collaborated with teams to create necessary components which
                 helped improve user experience
@@ -40,7 +48,7 @@ const Experience = () => {
                 Frontend features and components.
               </p>
               <p></p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

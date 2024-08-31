@@ -1,7 +1,10 @@
+"use client";
+
 import React, { lazy } from "react";
 import Works from "./Data";
 import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -17,7 +20,13 @@ const Projects = () => {
 
           {/* projects */}
 
-          <div className="grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full ">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "backIn" }}
+            viewport={{ margin: "-100px", once: true }}
+            className="grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 w-full "
+          >
             {Works.map((work, i) => (
               <div
                 key={i}
@@ -82,7 +91,7 @@ const Projects = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import Lottie from "lottie-react";
 import welcome from "@/assets/welcome.json";
 import Image from "next/image";
 import { FaAngleDoubleDown } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Hello = () => {
   const [pop, setPop] = useState(false);
@@ -27,7 +28,11 @@ const Hello = () => {
   // }, []);
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "backIn" }}
+      viewport={{ once: true }}
       id="hello"
       className="h-screen flex flex-col gap-5 md:gap-8 items-center justify-center px-[24px] md:px-[40px] py-40 md:py-48"
     >
@@ -45,9 +50,11 @@ const Hello = () => {
         />
       </div>
 
-      <button
+      <motion.button
+        whileHover={{ scale: 1.04 }}
+        whileTap={{ scale: 0.96, rotate: "2deg" }}
         onClick={handleClick}
-        className={` flex items-center justify-center gap-3 md:gap-4  cursor-pointer bg-gradient-to-br from-[#088395] to-[#088395] dark:from-[#B31312] dark:to-[#BE3144] dark:hover:bg-[#BE3144] hover:bg-[#37B7C3] hover:bg-none font-bold text-[#F3F3F3] py-2 px-5 md:py-3 md:px-6 md:text-[20px] italic  text-sm ${
+        className={`outline-none flex items-center justify-center gap-3 md:gap-4  cursor-pointer bg-gradient-to-br from-[#088395] to-[#088395] dark:from-[#B31312] dark:to-[#BE3144] dark:hover:bg-[#BE3144] hover:bg-[#37B7C3] hover:bg-none font-bold text-[#F3F3F3]  py-2 px-5 md:py-3 md:px-6 md:text-[20px] italic  text-sm ${
           pop && "opacity-0"
         }`}
       >
@@ -59,7 +66,7 @@ const Hello = () => {
           height={20}
           className="md:w-[24px] w-[20px]"
         />
-      </button>
+      </motion.button>
 
       <a href="#abt">
         <div className="cursor-pointer hover:bg-slate-300  dark:hover:bg-slate-800  hover:md:w-[42px] hover:md:h-[42px]  hover:w-[35px] hover:h-[35px] flex items-center justify-center animate-bounce md:text-2xl hover:rounded-full">
@@ -78,7 +85,7 @@ const Hello = () => {
           oscarjoseph7991@gmail.com
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

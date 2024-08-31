@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import { FaGitSquare, FaReact } from "react-icons/fa";
@@ -10,6 +12,7 @@ import {
   SiTypescript,
   SiVitest,
 } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Stack = () => {
   return (
@@ -22,7 +25,13 @@ const Stack = () => {
           <h3 className=" text-2xl md:text-4xl dark:text-white text-red-700  font-black">
             Stack
           </h3>
-          <div className="text-[14px] md:text-[16px] gap-8 md:gap-32  flex  items-start flex-wrap">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "backIn" }}
+            viewport={{ margin: "-100px", once: true }}
+            className="text-[14px] md:text-[16px] gap-8 md:gap-32  flex  items-start flex-wrap"
+          >
             <div className="flex flex-col gap-5 md:gap-8 items-start flex-1">
               <div className="flex gap-2 items-center justify-center dark:hover:text-white hover:text-red-700 cursor-pointer">
                 <FaReact className="text-[22px] md:text-[24px]" />
@@ -85,7 +94,7 @@ const Stack = () => {
             </div>
 
             <div className="flex flex-col gap-4 md:gap-5 items-start"></div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
